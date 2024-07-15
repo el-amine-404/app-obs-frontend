@@ -1,10 +1,11 @@
 import { Component, inject } from '@angular/core';
 import { UserService } from '../services/user.service';
+import { LowerCasePipe } from '@angular/common';
 
 @Component({
   selector: 'app-user',
   standalone: true,
-  imports: [],
+  imports: [LowerCasePipe],
   templateUrl: './user.component.html',
   styleUrl: './user.component.css'
 })
