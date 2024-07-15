@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { NAVBAR_CONFIGURATIONS } from './navbar.configuration';
+import { NAVBAR_ROUTES_CONFIGURATION } from './navbar.routes.configuration';
 
 @Component({
   selector: 'app-navbar',
@@ -9,5 +11,8 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+
+  navbarConfiguration=NAVBAR_CONFIGURATIONS;
+  navbarRouteConfiguration=NAVBAR_ROUTES_CONFIGURATION;
 
 }
