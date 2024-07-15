@@ -1,7 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-
-const BASE_URL="http://localhost:8081/api/v1/user"
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -13,6 +12,6 @@ export class UserService {
   constructor() { }
 
   getUsers() {
-    return this.http.get(BASE_URL);
+    return this.http.get(environment.apiURL + '/user');
   }
 }
